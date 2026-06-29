@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Menambahkan gradasi overlay pada hero section */
+#hero-section {
+  background-image:
+    linear-gradient(to right, rgba(20, 30, 70, 0.9), rgba(20, 30, 70, 0.3)),
+    url("https://av-canada.com/wp-content/uploads/2020/02/Pic-4-1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Styling untuk mobile menu dropdown */
+.mobile-menu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out; /* Animasi smooth dropdown */
+}
+.mobile-menu.open {
+  max-height: 500px; /* Nilai yang cukup besar untuk menampung semua menu */
+  transition: max-height 0.5s ease-in;
+}
+
+/* Gaya kustom untuk kotak layanan agar terlihat menonjol */
+.service-card {
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+}
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Gaya kustom untuk kartu proyek (sesuai gambar) */
+.project-card {
+  background-color: #e0e0e0; /* placeholder-gray */
+  border-radius: 2.5rem; /* rounded-4xl/5xl */
+  position: relative;
+  height: 400px; /* Tinggi tetap untuk demonstrasi */
+  overflow: hidden;
+}
+
+/* Tambahan styling untuk card 2 agar terlihat berbeda */
+.project-card-2 {
+  background-color: #d3d3d3;
+}
+
+/* Styling spesifik untuk paket harga paling populer */
+.premium-card {
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5);
+  border: 4px solid #ffc436;
+}
+
+/* Gaya kustom untuk formulir feedback (Section 8) */
+.feedback-form {
+  background: #1d2a57; /* Card Dark Blue */
+}
+
+#services {
+  background-image:
+    linear-gradient(to right, rgba(20, 30, 70, 0.9), rgba(20, 30, 70, 0.3)),
+    url("../img/_MG_8108.JPG");
+  background-size: cover;
+  background-position: center;
+}
+
+#Feedback {
+  background-color: #e0e0e0;
+  border-radius: 2.5rem;
+  position: relative;
+  /* Hapus height: 400px; */
+  /* Hapus overflow: hidden; */
+}
